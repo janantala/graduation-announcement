@@ -1,0 +1,98 @@
+<polymer-element
+  name="graduation-announcement"
+  attributes="name"
+>
+
+<template>
+
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0; padding: 0;
+}
+
+:host {
+  display: block;
+  position: relative;
+  width: 640px;
+  height: 320px;
+
+  background-color: rgb(68,155,181);
+  color: rgb(255,255,255);
+
+  font-family: "futura-pt", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+}
+
+.titles {
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.ing {
+  font-weight: 100;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.meng, .ceng {
+  font-weight: 200;
+}
+
+.content {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+}
+
+.footnote {
+  line-height: 25px;
+}
+
+</style>
+
+<div class="content">
+  <h1 class="title">
+    <span class="ing">Ing.</span>
+    <span class="name">{{name}}</span>
+  </h1>
+  <h2 class="titles">
+    <span class="meng">Master of Engineering</span><br>
+    <span class="ceng">Chartered Engineer</span>
+  </h2>
+</div>
+
+<footer class="footer">
+  <p class="footnote">Fakulta informatiky a informačných technológií</p>
+  <p class="footnote">Slovenská technická univerzita v Bratislave</p>
+</footer>
+
+</template>
+
+<script>
+  Polymer('graduation-announcement', {
+    name: 'Ján Antala'
+  });
+</script>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+<script type="text/javascript" src="http://use.typekit.com/mfr4qye.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+</polymer-element>
